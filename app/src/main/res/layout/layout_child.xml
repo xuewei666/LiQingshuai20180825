@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    >
+    <CheckBox
+        android:id="@+id/cb_child_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        />
+    <ImageView
+        android:id="@+id/iv_icon_view"
+        android:layout_width="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_height="80dp" />
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+      <TextView
+          android:id="@+id/tv_child_view"
+          android:ellipsize="end"
+          android:maxLines="2"
+          android:text="标题"
+          android:textColor="#000"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_price_view"
+            android:textSize="20dp"
+            android:text="标题"
+            android:textColor="#f00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.bwei.liqingshuai.ui.weigth.MyAddSubView
+        android:layout_marginRight="10dp"
+        android:id="@+id/add_sub_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+
+    </com.bwei.liqingshuai.ui.weigth.MyAddSubView>
+</LinearLayout>

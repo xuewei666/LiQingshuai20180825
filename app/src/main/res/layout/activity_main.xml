@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwei.liqingshuai.ui.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_weight="8"
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
+        <Button
+            android:id="@+id/sousuo"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:text="搜索"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <com.fyales.tagcloud.library.TagCloudLayout
+        app:tagSpacing="11dp"
+        android:id="@+id/tag_cloud_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:lineSpacing="10dp"
+        >
+    </com.fyales.tagcloud.library.TagCloudLayout>
+    <Button
+        android:id="@+id/qingchu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清除历史记录"
+        />
+</LinearLayout>
